@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FedEx 6:40 · Torneo de Golf</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛳</text></svg>"
+    />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">⛳</span>
+        <div>
+          <h1>FedEx 6:40</h1>
+          <p class="tagline">Torneo de Golf · Clasificación automática</p>
+        </div>
+      </div>
+      <nav class="tabs" id="tabs">
+        <button data-view="dashboard" class="active">Dashboard</button>
+        <button data-view="classification">Clasificación</button>
+        <button data-view="results">Resultados</button>
+        <button data-view="handicaps">Handicaps</button>
+        <button data-view="players">Jugadores</button>
+        <button data-view="dates">Fechas</button>
+      </nav>
+    </header>
+
+    <main id="app">
+      <section id="view-dashboard" class="view"></section>
+      <section id="view-classification" class="view hidden"></section>
+      <section id="view-results" class="view hidden"></section>
+      <section id="view-handicaps" class="view hidden"></section>
+      <section id="view-players" class="view hidden"></section>
+      <section id="view-dates" class="view hidden"></section>
+    </main>
+
+    <!-- Modal reutilizable (perfil de jugador, etc.) -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-card">
+        <button class="modal-close" id="modalClose">✕</button>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
