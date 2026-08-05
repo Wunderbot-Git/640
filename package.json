@@ -1,0 +1,16 @@
+{
+  "name": "fedex-640",
+  "version": "1.0.0",
+  "description": "Sistema de gestion del torneo de golf FedEx 6:40 - registro de resultados, calculo de scores netos y clasificacion automatica.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node --experimental-sqlite src/server.js",
+    "dev": "node --experimental-sqlite --watch src/server.js",
+    "test": "node --experimental-sqlite --test"
+  },
+  "author": "",
+  "license": "MIT"
+}
